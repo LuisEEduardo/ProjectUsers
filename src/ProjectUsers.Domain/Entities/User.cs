@@ -8,7 +8,8 @@ namespace ProjectUsers.Domain.Entities
         public string Email { get; private set; }
         public Role Role { get; private set; }
 
-        public User() { }
+        public User()
+        { }
 
         public User(string name, string email, Role role)
         {
@@ -17,6 +18,6 @@ namespace ProjectUsers.Domain.Entities
             Role = role;
 
             Validate(this, new UserValidation());
-        }        
+        }
     }
 }
