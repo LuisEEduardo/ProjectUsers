@@ -11,10 +11,10 @@ namespace ProjectUsers.Domain.Repositories
 
         Task<IList<Model>> GetByAllAsync();
 
-        Task<Model> CreateAsync(Model model);
+        void Create(Model model);
 
-        Task<Model> UpdateAsync(Model model);
+        void Update(Model model);
 
-        Task<bool> DeleteAsync(Model model);
+        void Delete(Model model);
     }
 }

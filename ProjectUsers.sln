@@ -5,23 +5,30 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{836AC5AA-16A6-4583-B34E-0B32810B3FAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectUsers.Domain", "src\ProjectUsers.Domain\ProjectUsers.Domain.csproj", "{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectUsers.Domain", "src\ProjectUsers.Domain\ProjectUsers.Domain.csproj", "{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectUsers.Data", "ProjectUsers.Data\ProjectUsers.Data.csproj", "{71332E51-C788-40A1-B391-E358C2F89B74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71332E51-C788-40A1-B391-E358C2F89B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71332E51-C788-40A1-B391-E358C2F89B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71332E51-C788-40A1-B391-E358C2F89B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71332E51-C788-40A1-B391-E358C2F89B74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B} = {836AC5AA-16A6-4583-B34E-0B32810B3FAA}
+		{71332E51-C788-40A1-B391-E358C2F89B74} = {836AC5AA-16A6-4583-B34E-0B32810B3FAA}
 	EndGlobalSection
 EndGlobal
