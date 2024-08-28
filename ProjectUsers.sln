@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{836AC5AA-16A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectUsers.Domain", "src\ProjectUsers.Domain\ProjectUsers.Domain.csproj", "{EF4F7BCB-8DBA-45D8-9391-ABDE65325E0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectUsers.Data", "ProjectUsers.Data\ProjectUsers.Data.csproj", "{71332E51-C788-40A1-B391-E358C2F89B74}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectUsers.Data", "src\ProjectUsers.Data\ProjectUsers.Data.csproj", "{71332E51-C788-40A1-B391-E358C2F89B74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
