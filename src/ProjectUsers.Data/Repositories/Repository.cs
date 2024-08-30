@@ -40,5 +40,8 @@ namespace ProjectUsers.Data.Repositories
         {
             _dbSet.Remove(model);
         }
+
+        public async Task<bool> ExistPredicateAsync(Expression<Func<Model, bool>> predicate)
+            => await _dbSet.AnyAsync(predicate);
     }
 }

@@ -19,5 +19,14 @@ namespace ProjectUsers.Domain.Entities
 
             Validate(this, new UserValidation());
         }
+
+        public void Edit(string name, string email, Role role)
+        {
+            Name = name;
+            Email = email;
+            Role = role;
+
+            Validate(this, new UserValidation());
+        }
     }
 }

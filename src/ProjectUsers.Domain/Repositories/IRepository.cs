@@ -16,5 +16,7 @@ namespace ProjectUsers.Domain.Repositories
         void Update(Model model);
 
         void Delete(Model model);
+
+        Task<bool> ExistPredicateAsync(Expression<Func<Model, bool>> predicate);
     }
 }
