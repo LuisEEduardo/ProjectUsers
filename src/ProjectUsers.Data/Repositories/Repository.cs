@@ -17,7 +17,7 @@ namespace ProjectUsers.Data.Repositories
             _dbSet = context.Set<Model>();
         }
 
-        public async Task<IList<Model>> GetByAllAsync()
+        public async Task<IList<Model>> GetAllAsync()
             => await _dbSet.AsNoTracking().ToListAsync();
 
         public async Task<Model> GetByIdAsync(Guid id)

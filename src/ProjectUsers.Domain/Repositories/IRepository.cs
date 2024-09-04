@@ -9,7 +9,7 @@ namespace ProjectUsers.Domain.Repositories
 
         Task<Model> GetByPredicateAsync(Expression<Func<Model, bool>> predicate);
 
-        Task<IList<Model>> GetByAllAsync();
+        Task<IList<Model>> GetAllAsync();
 
         void Create(Model model);
 

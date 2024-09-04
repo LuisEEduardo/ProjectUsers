@@ -7,7 +7,7 @@ using ProjectUsers.Domain.Repositories;
 
 namespace ProjectUsers.Application.Users.Handlers;
 
-public class CreateUserCommandHandler : IRequestHandler<CreateUserRequestCommand, CreateUserResponse>
+public class CreateUserCommandHandler : IRequestHandler<CreateUserRequestCommand, ListUserResponse>
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly INotificationContext _notificationContext;
@@ -18,7 +18,7 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserRequestCommand
         _notificationContext = notificationContext;
     }
 
-    public async Task<CreateUserResponse> Handle(CreateUserRequestCommand request, CancellationToken cancellationToken)
+    public async Task<ListUserResponse> Handle(CreateUserRequestCommand request, CancellationToken cancellationToken)
     {
         var user = new User(request.Name, request.Email, request.Role);
 
@@ -32,7 +32,7 @@ public class CreateUserCommandHandler : IRequestHandler<CreateUserRequestCommand
 
         await _unitOfWork.CommitAsync();
 
-        return new CreateUserResponse(user.Id, user.Name, user.Email, user.Role);
+        return new ListUserResponse(user.Id, user.Name, user.Email, user.Role);
     }
 }
 
